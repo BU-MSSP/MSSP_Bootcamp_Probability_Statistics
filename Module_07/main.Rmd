@@ -215,17 +215,21 @@ plot.continuous <- function(from, to, ...) {
 ## Introduction
 
 ### Roadmap
-Module  |  Topic                                   | Milestone                                  |
---------|------------------------------------------|--------------------------------------------|
-**M1**  | **Logic, Set and Probability.  Why?**    | **Understand Inductive Logic**             |
-M2      | Conditional Probability and Bayes Rule   | Express Linear Regression Using Matrix     |
-M3      | Inverse Matrix, Determinant, and Rank    | Solve Linear Regression                    |
-M4      | Eigenvalue and Matrix Decomposition      | Learn the Computation of Linear Regression |
-M5      | Vector Space, Norm, Projection           | Understand the Geometry of Regression      |
-M6      | Vector and matrix of Random Variables    | Normal Linear Model                        |
-M7      | Vector Calculus and MLE                  | MLE of Normal Linear Model                 |
-M8      | Numerical Optimization                   | MLE of other Linear Model                  |
-M9      | Linear Regression                        | Statistical Inference                      |
+
+Module  |  Topic                                          | What you should know                             |
+--------|-------------------------------------------------|--------------------------------------------------|
+  M1    | Why Probability? What is Probability?           | Probability Is Essential For Logic               |
+M2      | Conditioning, Bayes Rule, and Independence.     | Understand why you can learn by conditioning.    |
+M3      | Counting and Simulation                         | Learn how to count probability by simulation     |
+M4      | RV and Discrete Distributions                   | Learn the d,p,q,r functions of probability       |
+**M5**  | Continuous Distributions and Multiple RVs.      | Know how to work with Normal distribution        |
+M6      | Joint, Marginal, Conditional, Independence      | Can manipulate joint distribution                |
+**M7**      | **Summarizing Random Variables.   **                | **Able to Calculate Expectation and Variance **       |
+M8      | Simulation (multiple RV) and Limit Theorems     | Understand Sampling distribution and CLT         |
+M9      | Point Estimation                                | Maximum likelihood and Method of Moment          |
+M10     | Classical Inference and Bootstrap               | Bootstrap, P-value, Confidence Interval, etc     |
+M11     | Bayesian Inference                              | Use Stan to do Bayesian Inference                |
+     |
 
 ### Overview of module 7
 

@@ -898,6 +898,7 @@ $
 Knowing $\cexpect{X},$ can we say something about the distribution of $X$?
 
 Intuition: small $\cexpect{X}$ $\imp$ small $\cprob{X \ge a}$
+
 :::: {.bluebox data-latex=""}
 ::: {.center data-latex=""}
 **Markov Inequality**
@@ -905,10 +906,8 @@ Intuition: small $\cexpect{X}$ $\imp$ small $\cprob{X \ge a}$
 If $X \geq 0$ and $a >0,$ then $\cprob{X \geq a} \le \frac{\cexpect{X}}{a}.$
 ::::
 
-\mytwocols{0.4}
-{
-
-\redf{Proof.} For any $a>0,$ define $Y_a$ as:
+Proof: 
+For any $a>0,$ define $Y_a$ as:
 \begin{eqnarray}
 Y_a &\eqdef \begin{cases}
 0, & \text{if} \ X < a,\\
@@ -916,17 +915,11 @@ a,& \text{if} \ X \ge a
 \end{cases}
 \end{eqnarray} 
 
-5.{Then, using non-negativity of $X,$ $Y_a \le X,$ which leads to $\expect{Y_a} \leq \expect{X}.$ }
-}
-{
-6.{Note that we have:
-$$\expect{Y_a} = a \cprob{Y_a = a} = a \cprob{X \ge a}.$$
-}
-7.{Thus, $a \cdot \cprob{X \ge a} \leq \expect{X}.$} \qed
+Then, using non-negativity of $X,$ $Y_a \le X,$ which leads to $\expect{Y_a} \leq \expect{X}.$
 
-% \medskip
-% - \redf{(Q)} Why do we need $X >0$?
-}
+Note that we have:
+$$\expect{Y_a} = a \cprob{Y_a = a} = a \cprob{X \ge a}.$$
+Thus, $a \cdot \cprob{X \ge a} \leq \expect{X}.$ \qed
 
 
 ### Chebyshev Inequality
@@ -936,6 +929,7 @@ Knowing both $\cexpect{X}$ and $\cvar{X},$ can we say something about the distri
 Intuition: small $\cvar{X}$ $\imp$ $X$ is unlikely to be too far away from its mean.
 
 $\cexpect{X} = \mu,$ $\cvar{X} = \sigma^2.$
+
 :::: {.bluebox data-latex=""}
 ::: {.center data-latex=""}
 **Chebyshev Inequality**

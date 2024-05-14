@@ -2337,6 +2337,7 @@ $$
 - What is the ML estimate of $\theta$?
 
 - Reminder: $X \sim \exp(\lambda)$
+
 \aleq{
 \fx =
  \begin{cases}
@@ -2369,8 +2370,7 @@ library(dplyr)
 #Example 5.2
 N <- 10^5
 mean.boot <- numeric(N)
-for (i in 1:N)
-{
+for (i in 1:N){
   x <- sample(gamSample, 16, replace = TRUE) # draw resample
   mean.boot[i] <- mean(x) # compute mean, store in mean.boot
 }
